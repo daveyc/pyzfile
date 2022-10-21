@@ -1,0 +1,13 @@
+.idea/
+
+json/
+build/
+.venv/
+__pycache__/
+
+*egg-info*
+*.d
+*.o
+*.so
+*.lst
+*.x
