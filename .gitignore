@@ -1,0 +1,14 @@
+.idea/
+
+build/
+benchtest/
+.venv/
+__pycache__/
+test/
+
+*egg-info*
+*.d
+*.o
+*.so
+*.lst
+*.x

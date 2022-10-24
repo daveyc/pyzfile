@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+      <title>pyzfile package</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="prev" title="pyzfile" href="modules.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">pyzfile</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="modules.html#pyzfile">pyzfile</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">pyzfile package</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#module-pyzfile" class="reference internal">Module contents</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="modules.html">pyzfile</a> &raquo;</li>
+    
+    <li>pyzfile package</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="modules.html"
+       title="previous chapter">← pyzfile</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="pyzfile-package">
+<h1>pyzfile package<a class="headerlink" href="#pyzfile-package" title="Permalink to this heading">¶</a></h1>
+<section id="module-pyzfile">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyzfile" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyzfile.ZFile">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyzfile.</span></span><span class="sig-name descname"><span class="pre">ZFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.amrc">
+<span class="sig-name descname"><span class="pre">amrc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.amrc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.amrc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <code class="docutils literal notranslate"><span class="pre">__amrc</span></code> structure defined in stdio.h to help you determine errors resulting from
+an I/O operation.         See the z/OS C/C++ programming guide for documentation on the content
+of this stucture.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;amrc_noseek_to_seek&#39;</span><span class="p">:</span> <span class="s1">&#39;NOSWITCH&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="p">{</span>
+     <span class="s1">&#39;abend&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;rc&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;syscode&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
+     <span class="s1">&#39;alloc&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;svc_error&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;svc_info&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
+     <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+     <span class="s1">&#39;feedback&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;fdbk&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;rc&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;rtncd&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+  <span class="p">},</span>
+ <span class="s1">&#39;last_op&#39;</span><span class="p">:</span> <span class="s1">&#39;VSAM_OPEN_KSDS&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;msg&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;len&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;parmr0&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;parmr1&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;str&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;xrba&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
+ <span class="s1">&#39;rba&#39;</span><span class="p">:</span> <span class="mi">0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a dict containing fields from the <code class="docutils literal notranslate"><span class="pre">__amrc</span></code> structure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.close"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.eof">
+<span class="sig-name descname"><span class="pre">eof</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.eof"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.eof" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines if the file has reached end-of-file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the file has reaced end-of-file, otherwise False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.error">
+<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines if the files errror indicator is set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the files error indicator is set, otherwise False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.getpos">
+<span class="sig-name descname"><span class="pre">getpos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.getpos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.getpos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current file position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The current file position.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.info">
+<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dict with information about the file. See the z/OS C/C++ runtime reference for the <code class="docutils literal notranslate"><span class="pre">fldata()</span></code>
+function and the <code class="docutils literal notranslate"><span class="pre">fldata_t</span></code> structure.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;access_method&#39;</span><span class="p">:</span> <span class="s1">&#39;UNSPEC&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;blksize&#39;</span><span class="p">:</span> <span class="mi">32756</span><span class="p">,</span>
+ <span class="s1">&#39;device&#39;</span><span class="p">:</span> <span class="s1">&#39;DISK&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;dsname&#39;</span><span class="p">:</span> <span class="s1">&#39;TS8004.TXC.REGISTER&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgConcat&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgHFS&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgHiper&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgMem&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgPDE&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgPDSdir&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgPDSmem&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgPO&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgPS&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgTemp&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;dsorgVSAM&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+ <span class="s1">&#39;maxreclen&#39;</span><span class="p">:</span> <span class="mi">32756</span><span class="p">,</span>
+ <span class="s1">&#39;mode&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;append&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;read&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;update&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;write&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
+ <span class="s1">&#39;noseek_to_seek&#39;</span><span class="p">:</span> <span class="s1">&#39;NOSWITCH&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;openmode&#39;</span><span class="p">:</span> <span class="s1">&#39;RECORD&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;recfmASA&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;recfmB&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;recfmBlk&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;recfmF&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;recfmM&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;recfmS&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;recfmU&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+ <span class="s1">&#39;recfmV&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+ <span class="s1">&#39;vsamRKP&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+ <span class="s1">&#39;vsamRLS&#39;</span><span class="p">:</span> <span class="s1">&#39;NORLS&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;vsamkeylen&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span>
+ <span class="s1">&#39;vsamtype&#39;</span><span class="p">:</span> <span class="s1">&#39;KSDS&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A dict containing information from the <code class="docutils literal notranslate"><span class="pre">fldata_t</span></code> structure.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.locate">
+<span class="sig-name descname"><span class="pre">locate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/pyzfile.html#ZFile.locate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.locate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locates a record in a VSAM file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rec</strong> – The record to locate</p></li>
+<li><p><strong>option</strong> – An option from the following list: <code class="docutils literal notranslate"><span class="pre">key_first</span></code>, <code class="docutils literal notranslate"><span class="pre">key_last</span></code>, <code class="docutils literal notranslate"><span class="pre">key_eq</span></code>, <code class="docutils literal notranslate"><span class="pre">key_eq_bwd</span></code>,
+<code class="docutils literal notranslate"><span class="pre">key_ge</span></code>, <code class="docutils literal notranslate"><span class="pre">rba_eq</span></code>, <code class="docutils literal notranslate"><span class="pre">rba_eq_bwd</span></code></p></li>
+<li><p><strong>length</strong> – The length of the record. If this argument is not specified the length of record is used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the record was located, otherwise False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.rba">
+<span class="sig-name descname"><span class="pre">rba</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.rba"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.rba" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current RBA (relative byte address) for the VSAM file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The current RBA for the VSAM file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.read">
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">bytes</span></span></span><a class="reference internal" href="_modules/pyzfile.html#ZFile.read"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a record from the file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>length</strong> – The number of bytes to read. If this argument is not specified then the length is set to the
+maximum buffer size of 65536.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>If encoding has been specified then a UTF-8 string is returned, otherwise a bytes record.
+If end-of-file has been reached None is returned.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.readlines">
+<span class="sig-name descname"><span class="pre">readlines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.readlines"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.readlines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the entire file into a list of strings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of strings containing the contents of the file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.reads">
+<span class="sig-name descname"><span class="pre">reads</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.reads"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.reads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the entire file into a string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string containing the content of the file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.seek">
+<span class="sig-name descname"><span class="pre">seek</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">whence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.seek"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.seek" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the file position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>offset</strong> – The offset to position to</p></li>
+<li><p><strong>whence</strong> – The start position: <code class="docutils literal notranslate"><span class="pre">SEEK_SET</span></code>, <code class="docutils literal notranslate"><span class="pre">SEEK_CUR</span></code>, <code class="docutils literal notranslate"><span class="pre">SEEK_END</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.setpos">
+<span class="sig-name descname"><span class="pre">setpos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.setpos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.setpos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the current file position to <code class="docutils literal notranslate"><span class="pre">pos</span></code>. The position must have been previously obtained by
+calling <code class="docutils literal notranslate"><span class="pre">`getpos`</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pos</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces the last record read from a VSAM file with the contents of rec.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rec</strong> – The record to replace.</p></li>
+<li><p><strong>length</strong> – The length of the record. If this argument is not specified then the length of <code class="docutils literal notranslate"><span class="pre">rec</span></code> is used
+implicitly.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the record was updated, otherwise False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFile.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFile.write"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFile.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a record to the file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rec</strong> – The number of bytes to write. If <code class="docutils literal notranslate"><span class="pre">encoding</span></code> has been specified the record is encoded using the
+codeset.</p></li>
+<li><p><strong>length</strong> – The number of bytes to write. If this argument is not specified then the length is set to the
+length of <code class="docutils literal notranslate"><span class="pre">rec</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p>ZFileError if an error occurs writing the record.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="pyzfile.ZFileError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyzfile.</span></span><span class="sig-name descname"><span class="pre">ZFileError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amrc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFileError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFileError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>ZFile exception</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyzfile.ZFileError.amrc">
+<span class="sig-name descname"><span class="pre">amrc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyzfile.html#ZFileError.amrc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.ZFileError.amrc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the amrc dict at the time of error. Refer to the z/OS C/C++ programming guide for a description
+of the fields in the <code class="docutils literal notranslate"><span class="pre">__amrc</span></code> structure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The <code class="docutils literal notranslate"><span class="pre">__amrc</span></code> structure at the time of error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyzfile.open_zfile">
+<span class="sig-prename descclassname"><span class="pre">pyzfile.</span></span><span class="sig-name descname"><span class="pre">open_zfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pyzfile.ZFile" title="pyzfile.ZFile"><span class="pre">ZFile</span></a></span></span><a class="reference internal" href="_modules/pyzfile.html#open_zfile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyzfile.open_zfile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory function to instantiate and open a ZFile.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – The name of the file to open</p></li>
+<li><p><strong>mode</strong> – The open mode. For example, r, rb, w, wb</p></li>
+<li><p><strong>encoding</strong> – The file encoding</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new ZFile</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="modules.html"
+       title="previous chapter">← pyzfile</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2022, David Crayford.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
