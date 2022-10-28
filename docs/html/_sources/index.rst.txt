@@ -72,12 +72,16 @@ Read a binary file using QSAM
     from pyzfile import *
     try:
         with ZFile("//'SYSTEM.DAILY.SMF'", "rb,type=record,noseek") as file:
-            pass
+            for rec in file:
+                pass
     except ZFileError as e:
         print(e)
 
 Parse a YAML text file from a PDS member
 ----------------------------------------
+.. note::
+    This example uses a third part package for parsing YAML which can be installed using ``pip install ruamel.yaml``.
+
 .. code-block:: python
 
     from pyzfile import *

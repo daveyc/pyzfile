@@ -180,7 +180,8 @@ file to UTF-8.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyzfile</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="k">with</span> <span class="n">ZFile</span><span class="p">(</span><span class="s2">&quot;//&#39;SYSTEM.DAILY.SMF&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;rb,type=record,noseek&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-        <span class="k">pass</span>
+        <span class="k">for</span> <span class="n">rec</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
+            <span class="k">pass</span>
 <span class="k">except</span> <span class="n">ZFileError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 </pre></div>
@@ -188,6 +189,10 @@ file to UTF-8.</p>
 </section>
 <section id="parse-a-yaml-text-file-from-a-pds-member">
 <h2>Parse a YAML text file from a PDS member<a class="headerlink" href="#parse-a-yaml-text-file-from-a-pds-member" title="Permalink to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This example uses a third part package for parsing YAML which can be installed using <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ruamel.yaml</span></code>.</p>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyzfile</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">ruamel.yaml</span> <span class="kn">import</span> <span class="n">YAML</span>
 
