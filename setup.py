@@ -32,7 +32,7 @@ setup(
     license='MIT',
     maintainer='David Crayford',
     maintainer_email='dcrayford@gmail.com',
-    python_requires='>=3.8',
+    python_requires='>=3.10',
     platforms=['any', 'none'],
     py_modules=["pyzfile.pyzfile"],
     ext_modules=[

@@ -146,7 +146,7 @@ class ZFile:
             self.lib.zfile_close(self.handle)
             self.handle = None
 
-    def read(self, length: int = None):
+    def read(self, length: int = None) -> None | str | bytes:
         """
         Reads a record from the file.
 
@@ -201,7 +201,7 @@ class ZFile:
         if ret == 0:
             raise Exception(f"Error writing to file '{self.filename}': {self.lib.zfile_strerror().decode('utf-8')}")
 
-    def locate(self, rec, option: str, length: int = None) -> bool:
+    def locate(self, rec: str | bytes, option: str, length: int = None) -> bool:
         """
         Locates a record in a VSAM file.
 
