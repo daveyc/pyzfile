@@ -80,7 +80,7 @@ Read a binary file using QSAM
 Parse a YAML text file from a PDS member
 ----------------------------------------
 .. note::
-    This example uses a third part package for parsing YAML which can be installed using ``pip install ruamel.yaml``.
+    This example uses a third party package for parsing YAML which can be installed using ``pip install ruamel.yaml``.
 
 .. code-block:: python
 
