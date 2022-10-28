@@ -36,8 +36,8 @@ Examples
 The Python SDK for z/OS uses enhanced ASCII so conversions to/from EBCDIC code pages are required to process text files
 or string fields from binary files in the UTF-8 codeset.
 
-Read a BSAM text file
----------------------
+Read a text file using BSAM
+---------------------------
 MVS text files will almost certainly be encoding in EBCDIC. Specify the ``encoding`` parameter to decode the EBCDIC
 file to UTF-8.
 
@@ -51,8 +51,8 @@ file to UTF-8.
     except ZFileError as e:
         print(e)
 
-Write to a QSAM text file
--------------------------
+Write to a text file using QSAM
+-------------------------------
 .. code-block:: python
 
     from pyzfile import *
@@ -64,8 +64,8 @@ Write to a QSAM text file
     except ZFileError as e:
         print(e)
 
-Read a QSAM binary file
------------------------
+Read a binary file using QSAM
+-----------------------------
 
 .. code-block:: python
 

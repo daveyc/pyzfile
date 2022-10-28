@@ -148,8 +148,8 @@
 <h1>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h1>
 <p>The Python SDK for z/OS uses enhanced ASCII so conversions to/from EBCDIC code pages are required to process text files
 or string fields from binary files in the UTF-8 codeset.</p>
-<section id="read-a-bsam-text-file">
-<h2>Read a BSAM text file<a class="headerlink" href="#read-a-bsam-text-file" title="Permalink to this heading">¶</a></h2>
+<section id="read-a-text-file-using-bsam">
+<h2>Read a text file using BSAM<a class="headerlink" href="#read-a-text-file-using-bsam" title="Permalink to this heading">¶</a></h2>
 <p>MVS text files will almost certainly be encoding in EBCDIC. Specify the <code class="docutils literal notranslate"><span class="pre">encoding</span></code> parameter to decode the EBCDIC
 file to UTF-8.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyzfile</span> <span class="kn">import</span> <span class="o">*</span>
@@ -162,8 +162,8 @@ file to UTF-8.</p>
 </pre></div>
 </div>
 </section>
-<section id="write-to-a-qsam-text-file">
-<h2>Write to a QSAM text file<a class="headerlink" href="#write-to-a-qsam-text-file" title="Permalink to this heading">¶</a></h2>
+<section id="write-to-a-text-file-using-qsam">
+<h2>Write to a text file using QSAM<a class="headerlink" href="#write-to-a-text-file-using-qsam" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyzfile</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">recs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;record number one&#39;</span><span class="p">,</span> <span class="s1">&#39;record number two&#39;</span><span class="p">,</span> <span class="s1">&#39;record number three&#39;</span><span class="p">]</span>
 <span class="k">try</span><span class="p">:</span>
@@ -175,8 +175,8 @@ file to UTF-8.</p>
 </pre></div>
 </div>
 </section>
-<section id="read-a-qsam-binary-file">
-<h2>Read a QSAM binary file<a class="headerlink" href="#read-a-qsam-binary-file" title="Permalink to this heading">¶</a></h2>
+<section id="read-a-binary-file-using-qsam">
+<h2>Read a binary file using QSAM<a class="headerlink" href="#read-a-binary-file-using-qsam" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyzfile</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="k">with</span> <span class="n">ZFile</span><span class="p">(</span><span class="s2">&quot;//&#39;SYSTEM.DAILY.SMF&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;rb,type=record,noseek&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
