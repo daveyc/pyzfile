@@ -31,6 +31,15 @@ To build from source you must have Python 3.10 and the IBM xlclang++ compiler in
     git submodule update --init
     pip install .
 
+If you do not have access to the internet from you z/OS system use the following instructions to install the package.
+
+* From the repository in the Github UI enter the `dist <https://github.com/daveyc/pyzfile/tree/master/dist>`_ directory and click on the pyzfile *.whl file. A download button with appear.
+* Click the button to download the file to your PC
+* Use FTP to upload the file in binary mode to your z/OS system UNIX file system
+* From a UNIX shell use `pip` to install the package using the wheel file, for example::
+
+   pip install pyzfile-1.0.0.post2-py3-none-any.whl
+
 Building the doc
 ================
 The documentation is built using Sphinx. See the instructions on how to `Install Sphinx <https://www.sphinx-doc.org/en/master/usage/installation.html/>`_ for your OS.::
