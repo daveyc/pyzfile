@@ -31,6 +31,19 @@ To build from source you must have Python 3.10 and the IBM xlclang++ compiler in
     git submodule update --init
     pip install .
 
+Building the doc
+================
+The documentation is built using Sphinx. See the instructions on how to `Install Sphinx <https://www.sphinx-doc.org/en/master/usage/installation.html/>`_ for your OS.::
+
+    # download the 'Press' theme
+    pip install sphinx-press-theme
+
+    # build the doc
+    cd doc
+    make html
+
+
+
 Examples
 ========
 The Python SDK for z/OS uses enhanced ASCII so conversions to/from EBCDIC code pages are required to process text files
@@ -45,7 +58,7 @@ file to UTF-8.
 
     from pyzfile import *
     try:
-        with ZFile("//'USERID.CNTL(JCL)''", "rb,type=record",encoding='cp1047') as file:
+        with ZFile("//'USERID.CNTL(JCL)'", "rb,type=record",encoding='cp1047') as file:
             for rec in file:
                 print(rec)
     except ZFileError as e:
@@ -58,7 +71,7 @@ Write to a text file using QSAM
     from pyzfile import *
     recs = ['record number one', 'record number two', 'record number three']
     try:
-        with ZFile("//'USERID.CNTL(JCL)''", "wb,type=record,noseek", encoding='cp1047') as file:
+        with ZFile("//'USERID.CNTL(JCL)'", "wb,type=record,noseek", encoding='cp1047') as file:
             for rec in recs:
                 file.write(rec)
     except ZFileError as e:
